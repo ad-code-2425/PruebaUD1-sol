@@ -1,0 +1,31 @@
+[ {
+  "id" : 0,
+  "nombre" : "PP",
+  "votos" : 44064,
+  "porcentaje" : 0.0
+}, {
+  "id" : 0,
+  "nombre" : "PSdeG",
+  "votos" : 43332,
+  "porcentaje" : 0.0
+}, {
+  "id" : 0,
+  "nombre" : "BNG",
+  "votos" : 31628,
+  "porcentaje" : 0.0
+}, {
+  "id" : 0,
+  "nombre" : "PODEMOS-EU-ANOVA",
+  "votos" : 8246,
+  "porcentaje" : 0.0
+}, {
+  "id" : 0,
+  "nombre" : "VOX",
+  "votos" : 2913,
+  "porcentaje" : 0.0
+}, {
+  "id" : 0,
+  "nombre" : "Cs",
+  "votos" : 1671,
+  "porcentaje" : 0.0
+} ]
