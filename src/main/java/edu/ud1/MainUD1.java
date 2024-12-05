@@ -32,7 +32,13 @@ public class MainUD1 {
             .get("src", "main", "resources", "elecciones_output.xml")
             .toString();
 
-
+/**
+ * Punto principal de ejecución.
+ * Lee con SAX el archivo XML origen indicado por la constante ELECCIONES_INTPUT_FILE_XML y crea un ArrayList<Partido>
+ * Crea un archivo JSON a partir de los objetos Partido obtenidos del fichero XML origen en la ruta especificada por la constante ELECCIONES_OUTPUT_FILE_JSON
+ * Crea un archivo XML a partir de los objetos Partido obtenidos del fichero XML origen en la ruta especificada por la constante ELECCIONES_OUTPUT_FILE_XML_DOM
+ * @param args No son necesarios
+ */
     public static void main(String[] args) {
 
         ArrayList<Partido> partidos;
