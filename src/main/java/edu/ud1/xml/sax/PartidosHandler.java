@@ -56,6 +56,7 @@ public class PartidosHandler extends DefaultHandler {
                 //Obtenemos atributo
                 String id = attributes.getValue("id");
                 partido.setId(Integer.valueOf(id));
+                break;
 
             case Partido.PARTIDO_NOMBRE_TAG:
             case Partido.PARTIDO_VOTOS_NUM_TAG:
