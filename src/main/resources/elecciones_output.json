@@ -1,31 +1,31 @@
 [ {
-  "id" : 0,
+  "id" : 18,
   "nombre" : "PP",
   "votos" : 44064,
-  "porcentaje" : 0.0
+  "porcentaje" : 32.51
 }, {
-  "id" : 0,
+  "id" : 19,
   "nombre" : "PSdeG",
   "votos" : 43332,
-  "porcentaje" : 0.0
+  "porcentaje" : 31.97
 }, {
-  "id" : 0,
+  "id" : 3,
   "nombre" : "BNG",
   "votos" : 31628,
-  "porcentaje" : 0.0
+  "porcentaje" : 23.34
 }, {
-  "id" : 0,
+  "id" : 17,
   "nombre" : "PODEMOS-EU-ANOVA",
   "votos" : 8246,
-  "porcentaje" : 0.0
+  "porcentaje" : 6.08
 }, {
-  "id" : 0,
+  "id" : 25,
   "nombre" : "VOX",
   "votos" : 2913,
-  "porcentaje" : 0.0
+  "porcentaje" : 2.15
 }, {
-  "id" : 0,
+  "id" : 7,
   "nombre" : "Cs",
   "votos" : 1671,
-  "porcentaje" : 0.0
+  "porcentaje" : 1.23
 } ]

@@ -8,18 +8,14 @@ import org.xml.sax.helpers.DefaultHandler;
 
 import edu.ud1.model.Partido;
 
+
 /**
  *
  * @author maria
  */
 public class PartidosHandler extends DefaultHandler {
 
-    public static final String PARTIDO_TAG = "partido";
-    public static final String PARTIDOS_TAG = "partidos";
-    public static final String PARTIDO_VOTOS_NUM_TAG = "votos_numero";
-    public static final String PARTIDO_VOTOS_PORC_TAG = "votos_porciento";
-    public static final String PARTIDO_NOMBRE_TAG = "nombre";
-    public static final String PARTIDO_ATT_ID = "id";
+   
 
     private ArrayList<Partido> partidos = new ArrayList();
     private Partido partido;
@@ -37,13 +33,14 @@ public class PartidosHandler extends DefaultHandler {
     @Override
     public void endElement(String uri, String localName, String qName) throws SAXException {
         switch (qName) {
-            case PARTIDO_NOMBRE_TAG:
+            case Partido.PARTIDO_NOMBRE_TAG:
                 partido.setNombre(buffer.toString());
                 break;
-            case PARTIDO_VOTOS_NUM_TAG:
+            case Partido.PARTIDO_VOTOS_NUM_TAG:
                 partido.setVotos(Integer.parseInt(buffer.toString()));
                 break;
-            case PARTIDO_VOTOS_PORC_TAG:
+            case Partido.PARTIDO_VOTOS_PORC_TAG:
+                partido.setPorcentaje(Float.parseFloat(buffer.toString()));
                 break;
 
         }
@@ -53,13 +50,16 @@ public class PartidosHandler extends DefaultHandler {
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
         switch (qName) {
 
-            case PARTIDO_TAG:
+            case Partido.PARTIDO_TAG:
                 partido = new Partido();
                 partidos.add(partido);
+                //Obtenemos atributo
+                String id = attributes.getValue("id");
+                partido.setId(Integer.valueOf(id));
 
-            case PARTIDO_NOMBRE_TAG:
-            case PARTIDO_VOTOS_NUM_TAG:
-            case PARTIDO_VOTOS_PORC_TAG:
+            case Partido.PARTIDO_NOMBRE_TAG:
+            case Partido.PARTIDO_VOTOS_NUM_TAG:
+            case Partido.PARTIDO_VOTOS_PORC_TAG:
                 buffer.delete(0, buffer.length());
                 break;
 

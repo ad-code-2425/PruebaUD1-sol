@@ -2,11 +2,20 @@ package edu.ud1.model;
 
 import java.io.Serializable;
 
+
+
 /**
  *
  * @author maria
  */
 public class Partido implements Serializable {
+
+    public static final String PARTIDO_TAG = "partido";
+    public static final String PARTIDOS_TAG = "partidos";
+    public static final String PARTIDO_VOTOS_NUM_TAG = "votos_numero";
+    public static final String PARTIDO_VOTOS_PORC_TAG = "votos_porciento";
+    public static final String PARTIDO_NOMBRE_TAG = "nombre";
+    public static final String PARTIDO_ATT_ID = "id";
     
     private long id;
     private String nombre;
@@ -57,6 +66,7 @@ public class Partido implements Serializable {
         this.votos = votos;
     }
 
+    
     public float getPorcentaje() {
         return porcentaje;
     }
